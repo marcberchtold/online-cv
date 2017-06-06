@@ -5,7 +5,7 @@
             <div class="profile-container">
                 <img class="profile-img" src="{{site.baseurl}}/assets/images/{% if site.pic %}{{ site.pic }}{% else %}profile.png{% endif %}" alt="profile picture" />
                 <h1 class="name">{% if site.name %}{{site.name}}{% else %}Marc Berchtold{% endif %}</h1>
-                <h3 class="tagline">{% if site.tagline %}{{site.tagline}}{% else %}Softwareentwickler{% endif %}</h3>
+                <h3 class="tagline">{% if site.tagline %}{{site.tagline}}{% else %}Softwareentwickler/-architekt{% endif %}</h3>
             </div><!--//profile-container-->
             
             <div class="contact-container container-block">
@@ -28,13 +28,7 @@
                     {% else %}
                     <li class="website"><i class="fa fa-globe"></i><a href="http://blog.webjeda.com" target="_blank">blog.webjeda.com</a></li>
                     {% endif %}
-                    
-                    {% if site.linkedin %}
-                    <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://in.linkedin.com/in/{{site.linkedin}}" target="_blank">linkedin.com/in/{{site.linkedin}}</a></li>
-                    {% else %}
-                    <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://in.linkedin.com/in/sharath-kumar-87669956" target="_blank">linkedin.com/in/sharathdt</a></li>
-                    {% endif %}
-                    
+
                     {% if site.github %}
                     <li class="github"><i class="fa fa-github"></i><a href="http://github.com/{{site.github}}" target="_blank">github.com/{{site.github}}</a></li>
                     {% else %}
